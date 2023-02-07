@@ -1,0 +1,92 @@
+  * 
+  {
+    box-sizing: border-box;
+  }  
+
+html {
+    background-color: lightsteelblue;
+}
+
+header 
+{
+    border-bottom: 3px solid steelblue;
+    background-image: linear-gradient(white, lightsteelblue);
+
+}
+
+header h2 
+{
+    font-size: 250%;
+    font-style: italic;
+    color: steelblue;
+    text-shadow: 6px, 6px, 14px, steelblue;
+}
+
+h1,h2,h3,h4
+{
+    margin: 10000px, 300000px;
+}
+
+header img 
+{
+    float: left;
+}
+
+main 
+{
+    clear: both;
+}
+
+body 
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    max-width: 1000px;
+    width: 100%;
+    border: 3px solid steelblue;
+    margin: 0 auto;
+    background-color: white;
+}
+
+section a:link, section a:visited
+{
+    color: maroon;
+}
+/* section link colors */
+
+section a:hover, section a:focus
+{
+    color: steelblue;
+}
+
+/* aside link colors */
+aside a:link, aside a:visited
+{
+    color: steelblue;
+}
+
+aside a:hover, aside a:focus
+{
+    color: maroon;
+}
+
+aside li
+{
+    line-height: 1.5em;
+}
+
+footer p 
+{
+    font-size: 75%;
+    text-align: center;
+    background-color: steelblue;
+
+
+    
+}
+
+footer{
+    color: white;
+    background-color: steelblue;
+    padding: 15px, 0;
+}
