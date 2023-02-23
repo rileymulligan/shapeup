@@ -4,19 +4,78 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Shape Up!</title>
+	<link rel="stylesheet" href="styles/slicknav.css">
+
 	<link rel="stylesheet" href="styles/normalize.css">
 	<link rel="stylesheet" href="styles/main.css">
+
+	<!-- Slicknav info-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+		$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+		});
+	</script>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
-<body>
+<body class="clearfix">
 	<header>
 		<!-- header / logo-->
 		<img src="images\shape_up_logo.png" alt="Shape_Up_Logo">
 		<h2>Shape Up!</h2>
-		<h3>Find the best fit for you</h3>
+		<h3>Find the <span class="shadow">best</span> fit for you</h3>
 	</header>
 
+	<nav id="mobilemenu"></nav>
+	<nav id="nav_menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="cardio/index.html">Cardio</a></li>
+			<li>
+				<a href="diet/index.html">Diet</a>
+				<ul>
+					
+					<li><a href="diet/bmi.html">BMI</a></li>
+					<li><a href="diet/calories.html">Calories</a></li>
+					<li><a href="diet/meals.html">Meals</a></li>
+					
+				</ul>
+			</li>
+
+			<li><a href="strength/index.html">Strength</a></li>
+			<li id="last"><a href="stress/index.html">Stress</a>
+				<ul>
+					<li><a href="stress/meditate.html">Meditate</a></li>
+					<li><a href="stress/tips.html">Tips</a></li>
+					<li><a href="stress/vipassana.html">Vipassana</a></li> 
+				</ul>
+			</li>
+		</ul>
+	</nav>
+
+
 	<main> 
+
+		<aside>
+			<nav id="leftcol">
+			<h3>Additional Resources</h3>
+			<ul style="list-style-type:square">
+				<li><a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity">Physical Activity and Health </a></li>
+				<li><a href="https://www.webmd.com/fitness-exercise/ss/slideshow-stretches-to-get-loose">Stretching Exercises</a></li>
+				<li><a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/strength-training/art-20046670">Strength Training</a></li>
+				<li><a href="https://www.medicalnewstoday.com/articles/cardio-exercises-at-home">Cardiovascular Training</a></li>
+				<li><a href="https://dailyburn.com/life/fitness/beginner-yoga-poses-positions/">Yoga Workout</a></li>
+			</ul>
+			</nav>
+		</aside>
+
+
 		<section>
 			<h1>Get ready to Shape Up!</h1>
 			<p>How many times have you started a new workout routine or diet? And how many times has it failed to give you the results you want? Now, with the help of this site, you can learn about the exercises and diet that work best for you. We offer personalized programs as well as access to several health and dieting tools. So don't wait! Get started looking and feeling better today.
@@ -44,16 +103,26 @@
 			</p>
 		</section>
 
-		<aside>
-			<h3>Additional Resources</h3>
-			<ul style="list-style-type:square">
-				<li><a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity">Physical Activity and Health </a></li>
-				<li><a href="https://www.webmd.com/fitness-exercise/ss/slideshow-stretches-to-get-loose">Stretching Exercises</a></li>
-				<li><a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/strength-training/art-20046670">Strength Training</a></li>
-				<li><a href="https://www.medicalnewstoday.com/articles/cardio-exercises-at-home">Cardiovascular Training</a></li>
-				<li><a href="https://dailyburn.com/life/fitness/beginner-yoga-poses-positions/">Yoga Workout</a></li>
-			</ul>
+		<aside id="rightcol">
+			<h3>How to prepare to Shape Up!</h3>
+
+			<h4>Get a check up</h4>
+			<p>If you have any health issues or take any medications, be sure to consult with your healthcare provider before beginning a new exercise or diet regimen.</p>
+
+			<h4>Dress for Success</h4>
+			<p>Workout clothes should be comfy. While exercising, you should be thinking about what you're doing, not what you're wearing. That includes good shoes, which are essential for running, jogging, or walking, and socks that absorb shock and sweat.</p>
+
+			<h4>Equipment?</h4>
+			<p>You don't need to buy a lot of fancy equipment to get in shape. But you might want to invest in a yoga mat, a large exercise ball, or some weights, depending on your Shape Up! plan.</p>
+
+			<h4>Resist Temptation</h4>
+			<p>It's hard to eat right when everyone else is buying lunch at a fast food restaurant. Invest in some good food containers and bring your healthy lunch and snacks. Your body and your wallet will thank you.</p>
+
 		</aside>
+
+
+
+
 
 
 		
